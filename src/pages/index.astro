@@ -1,0 +1,189 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import CTA from '../components/CTA.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Code Blue HVAC | 24/7 HVAC Contractor in North Las Vegas, NV" description="Code Blue HVAC – Family-owned HVAC contractor in North Las Vegas. Commercial & residential AC repair, heating, ductwork & mini-splits. BBB A+ accredited. Call (702) 827-1184.">
+<Header />
+<main>
+<Hero />
+
+<!-- Services Overview -->
+<section class="py-20 lg:py-28 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<p class="text-accent font-accent font-semibold text-sm uppercase tracking-widest mb-3">Full-Service HVAC</p>
+<h2 class="font-heading text-5xl sm:text-6xl lg:text-7xl uppercase tracking-wide text-dark leading-[0.9]">Our HVAC<br /><span class="text-accent">Services</span></h2>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<a href="/services/ac-cooling" class="group p-8 bg-light rounded-card hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-all">
+<svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5.63 5.63l12.74 12.74M3 12h18M5.63 18.37l12.74-12.74"/><circle cx="12" cy="12" r="3"/></svg>
+</div>
+<h3 class="font-heading text-2xl uppercase tracking-wide text-dark mb-2">AC & Cooling</h3>
+<p class="text-dark/50 text-sm leading-relaxed">Expert AC repair, installation, replacement, and maintenance to beat the Las Vegas heat.</p>
+</a>
+<a href="/services/heating" class="group p-8 bg-light rounded-card hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-all">
+<svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c-5 7-8 11-8 14a8 8 0 1016 0c0-3-3-7-8-14z"/></svg>
+</div>
+<h3 class="font-heading text-2xl uppercase tracking-wide text-dark mb-2">Heating</h3>
+<p class="text-dark/50 text-sm leading-relaxed">Furnace repair, installation, and maintenance to keep your home warm through desert winters.</p>
+</a>
+<a href="/services/commercial-hvac" class="group p-8 bg-light rounded-card hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-all">
+<svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M9 6h.01M15 6h.01M9 10h.01M15 10h.01M9 14h.01M15 14h.01"/></svg>
+</div>
+<h3 class="font-heading text-2xl uppercase tracking-wide text-dark mb-2">Commercial HVAC</h3>
+<p class="text-dark/50 text-sm leading-relaxed">Full commercial HVAC solutions for businesses across the Las Vegas Valley.</p>
+</a>
+<a href="/services/ductwork-air-quality" class="group p-8 bg-light rounded-card hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-all">
+<svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/></svg>
+</div>
+<h3 class="font-heading text-2xl uppercase tracking-wide text-dark mb-2">Ductwork & Air Quality</h3>
+<p class="text-dark/50 text-sm leading-relaxed">Duct installation, repair, cleaning, and air purification for cleaner, healthier indoor air.</p>
+</a>
+<a href="/services/ductless-mini-splits" class="group p-8 bg-light rounded-card hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-all">
+<svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+</div>
+<h3 class="font-heading text-2xl uppercase tracking-wide text-dark mb-2">Ductless Mini-Splits</h3>
+<p class="text-dark/50 text-sm leading-relaxed">Efficient zone-by-zone cooling and heating without the need for ductwork.</p>
+</a>
+<a href="/contact" class="group p-8 bg-accent rounded-card hover:bg-accent-dark transition-all duration-300">
+<div class="w-14 h-14 bg-white/20 rounded-card flex items-center justify-center text-white mb-5">
+<svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+</div>
+<h3 class="font-heading text-2xl uppercase tracking-wide text-white mb-2">Get a Free Quote</h3>
+<p class="text-white/70 text-sm leading-relaxed">Contact us today for a free consultation on any HVAC service you need.</p>
+</a>
+</div>
+</div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-20 lg:py-28 bg-dark relative overflow-hidden">
+<div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<p class="text-accent font-accent font-semibold text-sm uppercase tracking-widest mb-3">Why Code Blue</p>
+<h2 class="font-heading text-5xl sm:text-6xl lg:text-7xl uppercase tracking-wide text-white leading-[0.9]">Why Choose<br /><span class="text-accent">Code Blue HVAC</span></h2>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white/5 border border-white/10 rounded-card p-7">
+<div class="w-12 h-12 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-4">
+<svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+</div>
+<h3 class="font-heading text-xl uppercase tracking-wide text-white mb-2">Family Owned</h3>
+<p class="text-white/40 text-sm leading-relaxed">Owned and operated by Chris and Connie Montague. We treat every customer like family.</p>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-card p-7">
+<div class="w-12 h-12 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-4">
+<svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+</div>
+<h3 class="font-heading text-xl uppercase tracking-wide text-white mb-2">BBB A+ Rated</h3>
+<p class="text-white/40 text-sm leading-relaxed">BBB accredited with an A+ rating. Licensed, bonded, and insured for your protection.</p>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-card p-7">
+<div class="w-12 h-12 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-4">
+<svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<h3 class="font-heading text-xl uppercase tracking-wide text-white mb-2">24/7 Service</h3>
+<p class="text-white/40 text-sm leading-relaxed">HVAC emergencies don&rsquo;t wait, and neither do we. Available around the clock, 365 days a year.</p>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-card p-7">
+<div class="w-12 h-12 bg-accent/10 rounded-card flex items-center justify-center text-accent mb-4">
+<svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<h3 class="font-heading text-xl uppercase tracking-wide text-white mb-2">15% Off</h3>
+<p class="text-white/40 text-sm leading-relaxed">Seniors, veterans, and first responders receive 15% off parts and labor on all services.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 lg:py-28 bg-light">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<p class="text-accent font-accent font-semibold text-sm uppercase tracking-widest mb-3">Testimonials</p>
+<h2 class="font-heading text-5xl sm:text-6xl uppercase tracking-wide text-dark leading-[0.9]">What Our<br /><span class="text-accent">Customers Say</span></h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white rounded-card p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<p class="text-dark/60 text-sm leading-relaxed mb-4">&ldquo;Chris and his team have always taken care of my HVAC needs for the past three years. Professional, honest, and always on time.&rdquo;</p>
+<p class="font-accent font-semibold text-dark text-sm">Larry C.</p>
+</div>
+<div class="bg-white rounded-card p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<p class="text-dark/60 text-sm leading-relaxed mb-4">&ldquo;Prompt, professional service with A/C system repair during intense summer heat. So grateful for their quick response and expertise!&rdquo;</p>
+<p class="font-accent font-semibold text-dark text-sm">O. Cruey</p>
+</div>
+<div class="bg-white rounded-card p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<p class="text-dark/60 text-sm leading-relaxed mb-4">&ldquo;Very professional, competitive prices, helped me with all the setup and answered my questions. I would definitely call this company again!&rdquo;</p>
+<p class="font-accent font-semibold text-dark text-sm">Lisa A.</p>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="/reviews" class="inline-flex items-center gap-2 font-accent font-semibold text-accent hover:text-accent-dark text-sm uppercase tracking-wide transition-colors">Read All Reviews <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+</div>
+</div>
+</section>
+
+<!-- Service Areas -->
+<section class="py-20 lg:py-28 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<p class="text-accent font-accent font-semibold text-sm uppercase tracking-widest mb-3">Serving Clark County</p>
+<h2 class="font-heading text-5xl sm:text-6xl uppercase tracking-wide text-dark leading-[0.9]">Areas We<br /><span class="text-accent">Serve</span></h2>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+<a href="/service-areas/north-las-vegas" class="group text-center p-6 bg-light rounded-card hover:bg-accent hover:text-white transition-all duration-200">
+<p class="font-accent font-semibold text-sm uppercase tracking-wide text-dark/70 group-hover:text-white transition-colors">North Las Vegas</p>
+</a>
+<a href="/service-areas/las-vegas" class="group text-center p-6 bg-light rounded-card hover:bg-accent hover:text-white transition-all duration-200">
+<p class="font-accent font-semibold text-sm uppercase tracking-wide text-dark/70 group-hover:text-white transition-colors">Las Vegas</p>
+</a>
+<a href="/service-areas/henderson" class="group text-center p-6 bg-light rounded-card hover:bg-accent hover:text-white transition-all duration-200">
+<p class="font-accent font-semibold text-sm uppercase tracking-wide text-dark/70 group-hover:text-white transition-colors">Henderson</p>
+</a>
+<a href="/service-areas/summerlin" class="group text-center p-6 bg-light rounded-card hover:bg-accent hover:text-white transition-all duration-200">
+<p class="font-accent font-semibold text-sm uppercase tracking-wide text-dark/70 group-hover:text-white transition-colors">Summerlin</p>
+</a>
+<a href="/service-areas/boulder-city" class="group text-center p-6 bg-light rounded-card hover:bg-accent hover:text-white transition-all duration-200">
+<p class="font-accent font-semibold text-sm uppercase tracking-wide text-dark/70 group-hover:text-white transition-colors">Boulder City</p>
+</a>
+<a href="/service-areas/paradise" class="group text-center p-6 bg-light rounded-card hover:bg-accent hover:text-white transition-all duration-200">
+<p class="font-accent font-semibold text-sm uppercase tracking-wide text-dark/70 group-hover:text-white transition-colors">Paradise</p>
+</a>
+</div>
+</div>
+</section>
+
+<CTA />
+</main>
+<Footer />
+</Layout>

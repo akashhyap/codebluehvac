@@ -1,0 +1,57 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  schema?: string;
+  canonical?: string;
+}
+
+const { title, description = "Code Blue HVAC – Family-Owned HVAC Contractor in North Las Vegas. Commercial & Residential AC Repair, Heating, Ductwork & Mini-Splits. Call (702) 827-1184.", schema, canonical } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pathway+Extreme:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <title>{title}</title>
+    {schema && <script type="application/ld+json" set:html={schema} />}
+  </head>
+  <body class="font-body text-dark bg-white antialiased">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html { scroll-behavior: smooth; }
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #F1F4F8; }
+  ::-webkit-scrollbar-thumb { background: #0055A5; border-radius: 4px; }
+
+  @keyframes fadeInUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes slideInLeft { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:translateX(0); } }
+  @keyframes slideInRight { from { opacity:0; transform:translateX(40px); } to { opacity:1; transform:translateX(0); } }
+
+  .animate-fade-in-up { animation: fadeInUp 0.6s ease-out both; }
+  .animate-fade-in { animation: fadeIn 0.5s ease-out both; }
+  .animate-slide-left { animation: slideInLeft 0.6s ease-out both; }
+  .animate-slide-right { animation: slideInRight 0.6s ease-out both; }
+
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+  .delay-600 { animation-delay: 0.6s; }
+
+  .rounded-theme { border-radius: 12px; }
+  .big-top { border-radius: 80px 12px 12px 12px; }
+  @media (max-width: 768px) { .big-top { border-radius: 40px 12px 12px 12px; } }
+</style>

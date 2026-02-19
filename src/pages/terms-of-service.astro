@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import CTA from '../components/CTA.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Terms of Service | Code Blue HVAC" description="Terms of service for Code Blue HVAC. Read our service terms, warranty information, and policies.">
+<Header />
+<main>
+<section class="relative bg-dark pt-32 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
+<div class="absolute inset-0 opacity-5" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<nav class="mb-4"><ol class="flex items-center gap-2 text-sm text-white/40"><li><a href="/" class="hover:text-white transition-colors">Home</a></li><li>/</li><li class="text-accent">Terms of Service</li></ol></nav>
+<h1 class="font-heading text-5xl sm:text-6xl lg:text-8xl uppercase tracking-wide text-white leading-[0.85] animate-fade-in-up">Terms of Service</h1>
+<p class="mt-4 text-white/50 text-lg max-w-2xl animate-fade-in-up delay-100">Please review our terms of service carefully.</p>
+<div class="mt-8 flex flex-wrap gap-4 animate-fade-in-up delay-200">
+<a href="tel:+17028271184" class="inline-flex items-center gap-2 bg-accent text-white px-7 py-4 rounded-card font-accent font-semibold uppercase tracking-wide text-sm hover:bg-accent-dark transition-all"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>(702) 827-1184</a>
+<a href="/contact" class="inline-flex items-center gap-2 bg-white/10 text-white px-7 py-4 rounded-card font-accent font-semibold uppercase tracking-wide text-sm hover:bg-white/20 transition-all">Schedule Service <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+</div></div></section>
+<section class="py-20 lg:py-28 bg-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<p class="text-accent font-accent font-semibold text-sm uppercase tracking-widest mb-3">Terms of Service</p>
+<h2 class="font-heading text-4xl sm:text-5xl uppercase tracking-wide text-dark leading-[0.9] mb-6">Service<br /><span class="text-accent">Terms</span></h2>
+<div class="space-y-4 text-dark/60 leading-relaxed"><p>By using the Code Blue HVAC website and services, you agree to these terms. Code Blue HVAC (Chiller Tech Industrial Inc.) provides HVAC installation, repair, maintenance, and related services in the Las Vegas Valley area.</p><p>All services are subject to availability and scheduling. Emergency services are provided on a first-come, first-served basis with prioritization based on urgency. Estimates are provided free of charge and are valid for 30 days unless otherwise noted.</p><p>Payment is due upon completion of service unless financing has been arranged. We accept all major credit cards and offer financing options for qualifying installations.</p><p>Work performed by Code Blue HVAC is warranted according to the specific terms provided with each service or installation. Manufacturer warranties apply to equipment as specified by the manufacturer.</p><p>Code Blue HVAC is licensed, bonded, and insured in the state of Nevada. Our BBB A+ accreditation reflects our commitment to business integrity and customer satisfaction.</p><p>For questions about these terms, contact us at info@codebluehvac.com or call (702) 827-1184.</p></div>
+</div></section>
+<CTA heading="Questions?\nCall Code Blue" />
+</main>
+<Footer />
+</Layout>
+<script>
+document.querySelectorAll('.faq-trigger').forEach((trigger) => {
+trigger.addEventListener('click', () => {
+const item = trigger.closest('.faq-item');
+const content = item?.querySelector('.faq-content');
+const icon = item?.querySelector('.faq-icon svg');
+const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+document.querySelectorAll('.faq-item').forEach((o) => { if (o !== item) { const c = o.querySelector('.faq-content'); const t = o.querySelector('.faq-trigger'); const ic = o.querySelector('.faq-icon svg'); if (c) c.style.maxHeight='0'; if (t) t.setAttribute('aria-expanded','false'); if (ic) ic.style.transform='rotate(0deg)'; } });
+if (isOpen) { content.style.maxHeight='0'; trigger.setAttribute('aria-expanded','false'); icon.style.transform='rotate(0deg)'; }
+else { content.style.maxHeight=content.scrollHeight+'px'; trigger.setAttribute('aria-expanded','true'); icon.style.transform='rotate(180deg)'; }
+});
+});
+</script>
